@@ -1,0 +1,1 @@
+[_Details_](https://jbithell.github.io/ScoreBoard/)

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Scoreboard</title>
+    <style>
+      body {
+        font-family: system, -apple-system, '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+        color: #fff;
+        background-color: #8aba87;
+        text-align: center;
+
+      }
+      h1 {
+        font-size: 150px;
+      }
+      h2 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 15px;
+      }
+      content {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+
+      .bottomtext {
+        opacity: 0.7;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+
+      }
+
+    </style>
+  </head>
+  <body>
+
+
+
+
+    <div id="content">
+      <h1>Scoreboard</h1>
+        <p>
+          Chromium <script>document.write(process.versions.chrome)</script><br/>
+          Electron <script>document.write(process.versions.electron)</script><br/>
+          Serialport <script>document.write(require('serialport/package').version)</script>
+              <br/><br/>
+              <h2 style="font-style: italic;">Searching for Controller Device</h2>
+        </p>
+    </div>
+    <p class="bottomtext">
+        <a id="noController" class="color: inherit; font-size: 12px; text-decoration: none; color: white;">Use without one</a><br/>
+        <a id="closeApp" class="color: inherit; font-size: 12px; text-decoration: none; color: white;">Close</a>
+    </p>
+  </body>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</html>

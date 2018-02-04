@@ -1,0 +1,25 @@
+{
+  "name": "ScoreBoard",
+  "version": "1.0.0",
+  "description": "Scoreboard software with added Arduino elements",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "install": "electron-rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/Jbithell/ScoreBoard"
+  },
+  "author": "JBithell",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^1.4.1",
+    "electron-rebuild": "^1.4.0"
+  },
+  "dependencies": {
+    "electron-window-manager": "^1.0.6",
+    "jquery": "^3.3.1",
+    "serialport": "^6.0.4"
+  }
+}
